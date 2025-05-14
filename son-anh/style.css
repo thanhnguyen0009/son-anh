@@ -305,7 +305,7 @@
 
 
 
-#page1{
+.box-p1{
     background-image: url('./anh/back-p1-02.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -316,7 +316,64 @@
     justify-content: center;
 }
 
-.p1, .p2, .p3, .p4{
+.img-box{
+    width: 15%;
+    margin-top: 180px;
+}
+
+.lb1-box{
+    font-family: var(--font-pinyon);
+    font-size: 2em;
+    color: var(--color-text);
+    margin-top: 10px;
+}
+
+.lb2-box{
+    font-family: var(--font-lora);
+    font-size: .7em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.btn-box {
+    font-family: var(--font-lora);
+    font-size: .6em;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-top: 170px;
+    position: relative;
+    display: inline-block;
+    animation: bubbleZoom 1.5s ease-in-out infinite;
+}
+
+.btn-box:hover {
+    transform: scale(1.1);
+}
+
+@keyframes bubbleZoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.lb3-box{
+    font-family: var(--font-pinyon);
+    font-size: 1.2em;
+    margin: 70px 0 50px;
+    color: var(--color-text);
+}
+
+.p1, .p2, .p3, .p4, .box-p1{
     display: flex;
     flex-direction: column;
     align-items: center;
