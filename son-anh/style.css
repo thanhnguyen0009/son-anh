@@ -717,7 +717,7 @@ border-radius: 20px;
   
 
 .check-box {
-  width: 150px;
+  width: 180px;
   text-align: center;
 display: inline-block;
 border: 2px solid #fff;
@@ -767,7 +767,7 @@ background-color: #fff;
       }
 
     textarea {
-        width: 70%;
+        width: 80%;
         padding: 10px;
         font-size: .75em;
         border: 2px solid #fff;
