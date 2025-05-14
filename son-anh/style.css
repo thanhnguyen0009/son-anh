@@ -369,7 +369,7 @@
 .lb3-box{
     font-family: var(--font-pinyon);
     font-size: 1.2em;
-    margin: 70px 0 50px;
+    margin: 70px 0 100px;
     color: var(--color-text);
 }
 
@@ -1077,6 +1077,9 @@ background-color: #fff;
     }
     .lb3-top{
         font-size: .6em;
+    }
+    .inp-ten{
+        width: 150px;
     }
   }
   
