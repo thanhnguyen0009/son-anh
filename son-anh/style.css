@@ -344,7 +344,7 @@
     border-radius: 20px;
     text-decoration: none;
     letter-spacing: 1px;
-    margin-top: 170px;
+    margin-top: 200px;
     position: relative;
     display: inline-block;
     animation: bubbleZoom 1.5s ease-in-out infinite;
@@ -369,7 +369,7 @@
 .lb3-box{
     font-family: var(--font-pinyon);
     font-size: 1.2em;
-    margin: 70px 0 100px;
+    margin: 70px 0 70px;
     color: var(--color-text);
 }
 
