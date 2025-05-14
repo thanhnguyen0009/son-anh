@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thông tin Open Graph cho ảnh đại diện -->
+    <meta property="og:image" content="https://yenstudio.com.vn/son-anh.jpg" />
+    <meta property="og:image:width" content="600" /> <!-- Chiều rộng ảnh đại diện -->
+    <meta property="og:image:height" content="300" /> <!-- Chiều cao ảnh đại diện -->
+
+    <!-- Các thông tin khác cho Open Graph -->
+    <meta property="og:title" content="MICHELLE - AARON" />
+    <meta property="og:description" content="MICHELLE TRAN DOAN - AARON BO LEE" />
+    <!-- <meta property="og:url" content="https://yenstudio.com.vn/son-anhthiepmoi.html" /> -->
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./son-anh/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>MICHELLE TRAN DOAN - AARON BO LEE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+            margin: 10px;
+            display: inline-block;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+      <!-- Trang 1 -->
+                <div id="page1" class="page active">
+                    <img src="./son-anh/anh/s-a-03.png" alt="" class="img-page1">
+                    <label for="" class="lb1-p1">Tiến Sơn và Trang Anh</label>
+                    <label for="" class="lb2-p1">07.06.2025</label>
+                    <a href="javascript:void(0);" onclick="showPage('page2')">CLICK VÀO ĐÂY ĐỂ XEM THIỆP MỜI!</a>
+                    <label for="" class="lb3-p1"> Now That I See you</label>
+                </div>
+
+    <!-- Trang 2 -->
+    <div id="page2" class="page">
+        <h1>Đây Là Trang Thứ Hai</h1>
+        <p>Bạn đã chuyển đến trang này từ trang mở đầu.</p>
+        <p>Thử truy cập liên kết bên ngoài dưới đây:</p>
+        <a href="https://maps.app.goo.gl/a1zpyWeUpmi19mAJ8" target="_blank">Liên Kết Bên Ngoài</a>
+        <p>Hoặc quay lại trang mở đầu:</p>
+        <a href="javascript:void(0);" onclick="showPage('page1')">Quay Lại Trang Mở Đầu</a>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            try {
+                // Ẩn tất cả các trang
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active');
+                });
+                // Hiện trang được chọn
+                const targetPage = document.getElementById(pageId);
+                if (targetPage) {
+                    targetPage.classList.add('active');
+                } else {
+                    console.error('Không tìm thấy trang với ID: ' + pageId);
+                }
+            } catch (error) {
+                console.error('Lỗi khi chuyển trang: ', error);
+            }
+        }
+    </script>
+</body>
+</html>

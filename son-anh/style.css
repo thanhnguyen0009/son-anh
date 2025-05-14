@@ -1,0 +1,1025 @@
+@font-face {
+    font-family: 'Pinyon Script';
+    src: url('./fonts/PinyonScript-Regular.woff2') format('woff2'),
+        url('./fonts/PinyonScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pinyon Script';
+    src: url('./fonts/PinyonScript.woff2') format('woff2'),
+        url('./fonts/PinyonScript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('./fonts/Lora-Italic.woff2') format('woff2'),
+        url('./fonts/Lora-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('./fonts/Lora-Italic.woff2') format('woff2'),
+        url('./fonts/Lora-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('./fonts/Lora-Regular.woff2') format('woff2'),
+        url('./fonts/Lora-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('./fonts/Lora-Italic.woff2') format('woff2'),
+        url('./fonts/Lora-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('./fonts/Lora-Regular.woff2') format('woff2'),
+        url('./fonts/Lora-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('./fonts/Lora-Italic.woff2') format('woff2'),
+        url('./fonts/Lora-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('./fonts/Lora-Regular.woff2') format('woff2'),
+        url('./fonts/Lora-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('./fonts/Lora-Regular.woff2') format('woff2'),
+        url('./fonts/Lora-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+
+:root{
+    --font-lora: 'Lora';
+    --font-pinyon: 'Pinyon Script';
+    --primary-color: #6D4329;
+    --color-text: #FFF09A;
+}
+
+
+
+/* Hiệu ứng fade-down */
+.lb1-p1, .box-info4, .lb2-p1, .lb3-p1, .lb4-p1, .lb4-p2, .lb5-p2{
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+}
+
+.lb1-p1.visible, .lb2-p1.visible, .lb3-p1.visible, .lb4-p1.visible, .lb4-p2.visible, .lb5-p2.visible, .box-info4.visible{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Hiệu ứng fade-up */
+.lb1-p2, .lb-time1, .lb-time2, .lb-time3, .lb-time33, .lb-time4, .lb-sub, .in-fe, .container-check, .inp-ten, .lb-text, #loi-chu, .lb6-p2, .lb7-p2, .btn, #loi-chuc {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+}
+
+.lb1-p2.visible, .lb-time1.visible, .lb-time2.visible, .lb-time3.visible, .lb-sub.visible, .lb-time33.visible, .lb-time4.visible, .in-fe.visible, .container-check.visible, .inp-ten.visible, .lb-text.visible, #loi-chuc.visible, .lb6-p2.visible, .lb7-p2.visible, .btn.visible, #loi-chuc.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Hiệu ứng fade-right */
+.lb2-p2 {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+}
+
+.lb2-p2.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Hiệu ứng fade-left */
+.lb3-p2 {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+}
+
+.lb3-p2.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Hiệu ứng zoom-in */
+.img-p1, .img-maps, .til1, .til2, .img-p3, .box-album2, .xacnhan {
+    transform: scale(0.5);
+    opacity: 0;
+    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+}
+
+.img-p1.visible, .img-maps.visible, .til1.visible, .til2.visible, .img-p3.visible, .box-album2.visible, .xacnhan.visible {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Loading screen container */
+.loading-container {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+}
+
+/* Spinner animation */
+.spinner {
+	border: 6px solid rgba(255, 255, 255, 0.3);
+	border-top: 6px solid #fff;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 1s linear infinite;
+}
+
+/* Spinner animation keyframes */
+@keyframes spin {
+	0% {
+			transform: rotate(0deg);
+	}
+	100% {
+			transform: rotate(360deg);
+	}
+}
+
+.custom-popup {
+	font-family: var(--font-lora);
+}
+
+.custom-title {
+	font-weight: bold;
+}
+
+.custom-confirm-button {
+	text-align: center;
+	display: inline-block;
+	border: 2px solid #111;
+	padding: 10px 20px !important;
+	margin: 5px 20px !important;
+	border-radius: 20px !important;
+	font-style: normal;
+	background-color: transparent;
+	color: #111;
+
+	font-size: 13px;
+	font-weight: 400;
+
+	text-transform: uppercase;
+	font-weight: bold;
+}
+/* Spinner animation */
+.spinner {
+	border: 6px solid rgba(255, 255, 255, 0.3);
+	border-top: 6px solid #fff;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 1s linear infinite;
+}
+
+
+.turn-top {
+    position: fixed; /* Đảm bảo box-circle luôn cố định trên màn hình */
+    bottom: 20px; /* Đẩy box-circle xuống một chút từ trên cùng */
+    right: 20px; /* Căn box-circle về phía bên phải */
+    z-index: 9999; /* Đảm bảo box-circle nằm trên các phần tử khác */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.turn{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden; /* Đảm bảo hình ảnh không bị tràn ra ngoài */
+    transition: transform 0.5s ease; /* Chuyển động mượt mà */
+    z-index: 2;
+  }
+  
+  /* Khi hình tròn được hover */
+  .turn:hover {
+    transform: scale(1.1); /* Tăng kích thước hình tròn khi hover */
+  }
+  
+  /* Hình ảnh bên trong hình tròn */
+  .turn-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+
+.container{
+    width: 480px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #111;
+    color: var(--primary-color);
+    background: #E8E6D9;
+}
+
+.container-wrapper{
+    width: 100%;
+    /* background-image: url('./anh/back-03.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+
+
+
+#page1{
+    background-image: url('./anh/back-p1-02.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p1, .p2, .p3, .p4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.p1{
+    background-image: url('./anh/p1-03.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p2{
+    background-image: url('./anh/p2-03.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p3{
+    background-image: url('./anh/p3-03.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p4{
+    background-image: url('./anh/p4-03.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-p1{
+    width: 8%;
+    margin-top: 50px;
+}
+
+.lb1-p1{
+    font-family: var(--font-pinyon);
+    font-size: 2em;
+    margin-top: 40px;
+    color: var(--color-text);
+}
+
+.box-dot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    color: #fff;
+}
+
+.fa-circle{
+    font-size: 3px;
+}
+
+.lb2-p1{
+    font-family: var(--font-pinyon);
+    font-size: .7em;
+    margin: 0 10px;
+}
+
+.lb3-p1{
+    font-family: var(--font-lora);
+    font-size: .7em;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.lb4-p1{
+    font-family: var(--font-pinyon);
+    font-size: 2em;
+    color: var(--color-text);
+}
+
+
+.lb1-p2{
+    font-family: var(--font-lora);
+    color: #fff;
+    font-size: .5em;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 70px;
+    line-height: 17px;
+}
+
+.lb2-p2{
+    font-family: var(--font-lora);
+    text-transform: uppercase;
+    font-size: .45em;
+    color: #fff;
+    text-align: center;
+    margin-top: 200px;
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+
+.lb3-p2{
+    font-family: var(--font-pinyon);
+    font-size: 1.5em;
+    margin-top: 7px;
+    color: var(--color-text);
+}
+
+.lb4-p2{
+    font-family: var(--font-lora);
+    font-size: .5em;
+    color: #fff;
+    margin-top: 100px;
+    letter-spacing: 1px;
+}
+
+.lb5-p2{
+    font-family: var(--font-lora);
+    color: var(--color-text);
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: 7px;
+}
+
+.lb6-p2{
+    font-family: var(--font-pinyon);
+    color: var(--color-text);
+    font-size: 1.5em;
+    margin-top: 50px;
+}
+
+.lb7-p2{
+    font-family: var(--font-lora);
+    color: #fff;
+    font-size: .5em;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+
+.btn{
+    font-family: var(--font-lora);
+    color: #fff;
+    font-size: .5em;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px 150px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #111;
+    font-weight: bold;
+}
+
+.img-p3{
+    width: 70%;
+    margin-top: 150px;
+}
+
+/* ====FORM+============== */
+
+/* #xac-nhan{
+    background-image: url('./anh/backp4-03.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+
+form{
+    color: #fff;
+    font-family: var(--font-ftv);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px 0 50px;
+    background-image: url('./anh/forrm-03.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.feed-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.lb-thamdu{
+    font-family: var(--font-pinyon);
+    font-size: 2.3em;
+    margin-top: 100px;
+    line-height: 30px;
+    color: var(--color-text);
+}
+
+.sub16{
+    font-style: italic;
+    color: var(--color-text2);
+    font-size: .4em;
+    font-family: var(--font-lora);
+}
+
+.img-form{
+    width: 6%;
+    margin-top: 20px;
+}
+
+.in-fe{
+    font-family: var(--font-lora);
+    font-size: .6em;
+    line-height: 18px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.fa-diamond{
+    font-size: 5px;
+    margin-top: 30px;
+}
+
+.lb-til{
+    font-family: var(--font-ftv);
+    font-size: .8em;
+    color: var(--color-text);
+    margin: 20px 0 10px;
+    text-align: left;
+    line-height: 10px;
+}
+
+.in-fe2{
+    font-family: var(--font-ftv);
+    font-size: .8em;
+    font-weight: bold;
+    line-height: 18px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.hr-form{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    margin: 10px 0;
+}
+
+
+
+.sub-til{
+    font-style: italic;
+    color: var(--color-text2);
+    font-size: .8em;
+    font-family: var(--font-lora);
+}
+
+[type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    /* overflow: hidden; */
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    /* white-space: nowrap; */
+    }
+
+    .container-check {
+        max-width: 100%;
+        margin-top: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-lora);
+        font-weight: 300;
+        /* gap: 5px; */
+    }
+    
+    .box-feed:checked + label {
+        color: #fff;
+        background-color: var(--primary-color);
+    }
+    
+    .box-feed {
+        border-radius: 20px;
+        width: 100px;
+    }
+    
+    .box-check {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-lora);
+        border-radius: 20px;
+        margin: 0;
+        padding: 10px 20px;
+    }
+
+.box-feed:checked+label {
+color: #fff;
+background-color: var(--primary-color);
+}
+
+.box-feed{
+border-radius: 20px;
+}
+
+.box-label{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.lbb{
+    font-size: .6em;
+    font-weight: bold;
+}
+
+.lb-text{
+    font-family: var(--font-lora);
+    font-size: .7em;
+    margin: 20px 0 5px;
+}
+
+.til-check{
+  /* margin: 0 auto; */
+  font-style: normal;
+  font-size: .8em;
+  font-weight: 400;
+  font-family: var(--font-lora);
+  }
+  
+
+.check-box {
+  width: 200px;
+  text-align: center;
+display: inline-block;
+border: 2px solid #fff;
+padding: 2px 10px 3px;
+margin: 5px 15px 5px 0;
+border-radius: 20px;
+font-style: normal;
+/* background-color: #fff; */
+}
+.box-feed:checked+label {
+color: #111;
+background-color: #fff;
+}
+.check-box:hover {
+    background-color: #fff;
+    color: #111;
+    font-weight: bold;
+}
+
+  .box-ten{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: var(--font-lora);
+    margin: 10px 0 0;
+    }
+    
+
+
+    .inp-ten{
+        width: 100%;
+        height: 30px;
+        text-align: left;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        font-size: 13px;
+        font-weight: 300;
+        padding: 5px 10px;
+        margin: 7px 0;
+        background: none;
+        }
+
+    ::placeholder {
+        white-space: pre-line;
+      }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: .75em;
+        border: 2px solid #fff;
+        background: none;
+        border-radius: 20px;
+        resize: vertical; /* Cho phép thay đổi chiều cao */
+        margin-top: 7px;
+    }
+    
+
+    input, textarea { /*thay đổi khi nhập */
+        font-family: var(--font-lora);
+        font-weight: 300;
+        font-size: .7em;
+        color: #fff;
+    }
+    
+    input::placeholder, textarea::placeholder {
+        font-family: var(--font-lora);
+        font-weight: 300;
+        font-size: .7em;
+        
+    }
+#loi-chuc{
+    font-family: var(--font-lora);
+    font-weight: lighter;
+    font-size: .8em;
+}
+
+    
+.wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.xacnhan{
+    height: 30px;
+    font-size: .7em;
+    background: none;
+    color: #fff;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    width: 150px;
+    font-weight: 300;
+    font-family: var(--font-lora);
+    margin-top: 10px;
+}
+    
+    .xacnhan:hover{
+    background: #fff;
+    color: #111;
+    font-weight: bold;
+}
+
+
+.img-p4{
+    width: 8%;
+    margin-top: 100px;
+}
+
+.lb1-p4{
+    text-transform: uppercase;
+    font-family: var(--font-lora);
+    font-size: .5em;
+    color: #fff;
+    letter-spacing: 1px;
+    word-spacing: .5;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 15px;
+}
+
+.lb2-p4{
+    font-family: var(--font-pinyon);
+    font-size: 2.5em;
+    color: var(--color-text);
+    margin-top: 80px;
+}
+
+.lb3-p4{
+    font-family: var(--font-lora);
+    font-size: .5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 15px;
+    color: #fff;
+    margin-top: 7px;
+}
+
+.lb4-p4{
+    font-family: var(--font-lora);
+    color: #fff;
+    font-size: .3em;
+    letter-spacing: 1px;
+    margin: 70px 0;
+}
+
+
+/* ======================================== */
+
+/* Đảm bảo box-circle luôn cố định và không ảnh hưởng đến nội dung trang */
+.box-circle {
+    position: fixed; /* Đảm bảo box-circle luôn cố định trên màn hình */
+    top: 20px; /* Đẩy box-circle xuống một chút từ trên cùng */
+    right: 20px; /* Căn box-circle về phía bên phải */
+    z-index: 9999; /* Đảm bảo box-circle nằm trên các phần tử khác */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .lb-circle {
+    margin-top: 10px;
+    font-size: 10px;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: var(--font-lora);
+    text-align: center;
+    line-height: 10px;
+  }
+  
+  /* Thêm hiệu ứng hover cho label */
+  .lb-circle:hover {
+    color: #3498db;
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+    overflow: hidden; /* Đảm bảo hình ảnh không bị tràn ra ngoài */
+    transition: transform 0.5s ease; /* Chuyển động mượt mà */
+    z-index: 2;
+  }
+  
+  /* Khi hình tròn được hover */
+  .circle:hover {
+    transform: scale(1.1); /* Tăng kích thước hình tròn khi hover */
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); */
+  }
+  
+  /* Hình ảnh bên trong hình tròn */
+  .circle-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  /* Hiệu ứng xoay liên tục */
+  .circle.spin {
+    animation: spin 1s linear infinite; /* Xoay liên tục */
+  }
+  
+  /* Định nghĩa hoạt ảnh xoay */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .box-back{
+    background-image: url('../chien-diem/fonts/./anh/back-02.png');
+    padding-bottom: 50px;
+  }
+
+
+/* ==================MODAL==================== */
+
+/* Open Modal Button */
+.open-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  /* Modal Overlay Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  /* Modal Content Styles */
+  .modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    animation: slideDown 0.4s ease-out;
+    font-family: var(--font-piyon);
+    font-size: 1.5em;
+    z-index: -1;
+  }
+  h2{
+    font-family: var(--font-lora);
+    font-size: .7em;
+    margin-bottom: 20px;
+  }
+  .noi-dung{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-lora);
+    color: var(--color-text);
+  }
+  .copy{
+    margin-left: 10px;
+    font-family: var(--font-lora);
+    padding: 2px 2px 4px;
+    border-radius: 10px;
+  }
+  .img-modal{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .img-zl{
+    width: 100%;
+  }
+
+  .closeModal{
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: .7em;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  /* Slide Down Animation */
+  @keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+
+/* ================================ */
+
+@media (max-width: 480px){
+    .container {
+        width: 100%;
+    }
+    .box-image{
+        margin-left: -15px;
+        
+    }
+    .imge{
+        width: 40%;
+    }
+    .in-fe, .in-fe2{
+        font-size: .45em;
+    }
+    .lb-line1, .lb-name{
+        font-size: 2.7em;
+    }
+    .kinhmoi{
+        font-size: .6em;
+    }
+    textarea {
+        width: 90%;
+        padding: 10px;
+        font-size: .75em;
+    }
+    .lb-endd1{
+        font-size: 8px;
+    }
+    .lb-endd2{
+        font-size: 7.5px;
+    }
+    .lb7-p2{
+        font-size: .55em;
+    }
+    .btn-acc{
+        font-size: .6em;
+    }
+    .btn-acc2{
+        font-size: .5em;
+    }
+    .lb-acc{
+        font-size: .4em;
+    }
+    .lb3-top{
+        font-size: .6em;
+    }
+  }
+  
